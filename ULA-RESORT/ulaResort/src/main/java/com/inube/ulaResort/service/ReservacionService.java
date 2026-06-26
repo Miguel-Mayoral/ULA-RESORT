@@ -55,7 +55,7 @@ public class ReservacionService {
         // Validar tarjeta
         TarjetaCreditoModel tarjeta = tarjetaRepository.findById(reservacion.getTarjeta().getIdTarjeta())
                 .orElseThrow(() -> new RuntimeException(MSG8));
-        if (tarjeta.getEstado().equals(CODENEG)) throw new RuntimeException(MSG9);
+        if (tarjeta.getEstado().equals(CODENEG)) throw new RuntimeException(MSG7);
 
 
         // Validar paquete promocional (si aplica)
