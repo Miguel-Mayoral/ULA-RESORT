@@ -1,11 +1,4 @@
-
-
-
-
-
-
 -- Ejemplos de inserción en CLIENTE
-
 INSERT INTO CLIENTE (ID_CLIENTE, NOMBRE, APELLIDO, TELEFONO, CORREO, DIRECCION, FECHA_REGISTRO, ESTADO)
 VALUES (1, 'Juan', 'Pérez', '9511234567', 'juan.perez@gmail.com', 'Centro, Huajuapan', SYSDATE, 1);
 
